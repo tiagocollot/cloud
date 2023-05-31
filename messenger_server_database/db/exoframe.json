@@ -1,0 +1,10 @@
+{
+    "name": "tiagocollot-message-database",
+    "domain": false,
+    "hostname": "tiagocollot-message-database",
+    "image": "postgres:12",
+    "env": {
+      "POSTGRES_PASSWORD": "@tiagocollot-postgres-password"
+    },
+    "volumes": ["tiagocollot_message_database_volume:/var/lib/postgresql/data"]
+  }
